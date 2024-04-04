@@ -40,4 +40,8 @@ public class Student_controller {
         return ResponseEntity.status(HttpStatus.CREATED).body(st);
       //  return s;
    }
+    @GetMapping("/hi")
+    public  String Test(){
+        return "hello spring boot";
+    }
 }
